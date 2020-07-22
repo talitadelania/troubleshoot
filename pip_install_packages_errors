@@ -1,0 +1,17 @@
+>>python -V
+Python 3.6.8
+>>pip -V
+pip 20.1.1
+
+Then try to install a package via pip (e.g. matplotlib, pandas,etc)
+>>pip install matplotlib
+Get SSL: CERTIFICATE_VERIFY_FALED, then ERROR: Could not find a version that satisfies the requirement matplotlib (from versions: none) ERROR: No matching distribution found for matplotlib
+
+Permanent fix:
+>>pip install matplotlib --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+++ To verify which version of matplotlib:
+>>python
+>>import matplotlib
+>>matplotlib.__version__
+'3.3.0'
